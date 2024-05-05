@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çeviri Sitesi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Çeviri Sitesi</h1>
+        <form action="/translate" method="post">
+            <div class="form-group">
+                <label for="sourceText">Kaynak Metin</label>
+                <input type="text" id="sourceText" name="sourceText" required>
+            </div>
+            <div class="form-group">
+                <label for="targetLanguage">Hedef Dil</label>
+                <select id="targetLanguage" name="targetLanguage">
+                    <option value="en">İngilizce</option>
+                    <option value="fr">Fransızca</option>
+                    <option value="es">İspanyolca</option>
+                    <!-- Diğer dil seçeneklerini buraya ekleyebilirsiniz -->
+                </select>
+            </div>
+            <button type="submit">Çevir</button>
+        </form>
+        
+    </div>
+</body>
+</html>

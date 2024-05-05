@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+    list-style: none;
+    text-decoration: none;
+    
+    
+    
+}
+:root{
+    --main-color:#0b178f;
+    --text-color:#1c2844;   
+}
+section{
+    padding: 50px 10%;
+}
+img{
+    width: 2; 
+}
+
+html::-webkit-scrollbar{
+    width: 0.5rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+.copyright{
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    background: var(--text-color);
+}
+.heading{
+    text-align: center;
+}
+.heading h1{
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: var(--main-color);
+}
+.Iletisim-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.Iletisim-form formm{
+    position: relative;
+    width: 400px;
+}
+form input,
+form textarea{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    outline: none;
+    background: rgb(28,40,68,0.8);
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    color: #fff;
+}
+form input::placeholder,
+form textarea::placeholder {
+    color: #fff;
+}
+textarea{
+    resize: none;
+    height: 200px;
+}
+form .Gonder-btn{
+    max-width: 110px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+form .Gonder-btn:hover{
+    background: var(--main-color);
+}
+.Hakkımda{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(17rem,1fr));
+    gap: 1.5rem;
+}
+.Hakkımda-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.Hakkımda-title h1{
+    color: var(--main-color);
+    font-size: 1.7rem;
+}
+.Hakkımda-title span,
+.heading span
+{
+    border-bottom: 3px solid var(--main-color);
+}
+.Hakkımda-title h2{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.Hakkımda-img{
+    width: 150px;
+    height: 150px;
+    margin-top: 2rem;
+}
+.Hakkımda-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    background: var(--main-color);
+}
+.social{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.social a{
+    .bx {
+        margin-right: 1rem;
+        font-size: 24px;
+        color: #fff;
+        padding: 10px;
+        border-radius: 4px;
+        background: var(--text-color); 
+     }
+} 
+.social a {
+    .bx:hover{
+        background: var(--main-color);
+    }
+}
+.Hakkımda-text p{
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+.heading{
+    text-align: center;
+}
+.heading h1{
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: var(--main-color);
+}
